@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+<description> seguridad-practica6-html </description>
+
+<display-name>MiAplicacion</display-name>
+
+<welcome-file-list>
+        <welcome-file>Formulario.html</welcome-file>
+</welcome-file-list>
+
+<servlet>
+	<servlet-name>ServletSinValidacion</servlet-name>
+	<servlet-class>seguridad.practica6.ServletSinValidacion</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ServletSinValidacion</servlet-name>
+	<url-pattern>/resultado1.do</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ServletConValidacion</servlet-name>
+	<servlet-class>seguridad.practica6.ServletConValidacion</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ServletConValidacion</servlet-name>
+	<url-pattern>/resultado.do</url-pattern>
+</servlet-mapping>
+
+</web-app>

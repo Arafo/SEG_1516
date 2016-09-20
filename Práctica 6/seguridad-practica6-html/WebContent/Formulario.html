@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+<title>Formulario</title>
+</head>
+<body>
+	<h2>Formulario</h2>
+	<form action="/seguridad-practica6-html/resultado.do" method="post">
+		<label for="IdNombre">Nombre:</label><input id="IdNombre" type="text" name="nombre"/><br/>
+		<label for="IdDireccion">Direccion:</label><input id="IdDireccion" type="text" name="direccion"/><br/>	
+		<fieldset style="border: 0px; padding: 0em;">
+		<legend style="padding:0px; border-radius:0px; margin-left:0px">Tarjeta de credito</legend>
+			<label for="IdTipo">Tipo:</label><input id="IdTipo" type="text" name="tipo"><br/>
+			<label for="IdNumero">Numero:</label><input id="IdNumero" type="text" name="numero"><br/>
+			<label for="IdMesExpira">Mes Expira:</label><input id="IdMesExpira" type="text" name="mesexpira"><br/>
+			<label for="IdAnioExpira">Año Expira:</label><input id="IdAnioExpira" type="text" name="anioexpira"><br/>
+			<label for="IdCVN">CVN:</label><input id="IdCVN" type="text" name="cvn"><br/>
+		</fieldset>
+		<label for="IdDNI">DNI:</label><input id="IdDNI" type="text" name="dni"><br/>
+		<input type="submit"> <input type="reset"><br/>
+	</form>
+</body>
+</html>

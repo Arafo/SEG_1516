@@ -1,0 +1,3 @@
+javac -d bin/ -cp "lib/*" src/seguridad/practica6/Leer.java 
+cd bin
+java -cp "../lib/*:." seguridad.practica6.Leer -c -e SQL `cat ../file.txt`
